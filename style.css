@@ -51,6 +51,7 @@ header {
     font-size: 60px;
     width: auto; /* Remove aquela largura fixa de 400px para o texto poder esticar */
     text-align: center;
+    margin: 0;
 }
 
 /* Colunas de Imagens */
