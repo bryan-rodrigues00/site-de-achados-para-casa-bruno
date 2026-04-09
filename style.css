@@ -48,7 +48,7 @@ header {
     flex-direction: row; /* Coloca os elementos internos lado a lado */
     justify-content: center;
     gap: 30px; /* Espaço entre as palavras/frases */
-    font-size: 60px;
+    font-size: 40px;
     width: auto; /* Remove aquela largura fixa de 400px para o texto poder esticar */
     text-align: center;
     margin: 0;
@@ -56,7 +56,7 @@ header {
 
 /* Colunas de Imagens */
 .coluna-imagem {
-    flex: 0 0 700px; /* Define uma largura fixa para as imagens não dominarem a tela */
+    flex: 0 0 400px; /* Define uma largura fixa para as imagens não dominarem a tela */
     display: flex;
     flex-direction: column;
     gap: 50px;
