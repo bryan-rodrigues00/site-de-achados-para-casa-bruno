@@ -1,0 +1,111 @@
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: blue; /* Fundo branco */
+    color: #000000;            /* Fonte preta */
+    line-height: 1.6;
+}
+
+/* Título com Efeito 3D */
+header {
+    background-color: black; /* Fundo azul solicitado */
+    padding: 40px 0;
+    text-align: center;
+}
+
+.titulo-3d {
+    color: blue; /* Texto preto */
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    /* Efeito 3D usando camadas de sombras */
+    text-shadow: 1px 1px 0px #555, 
+                 2px 2px 0px #444, 
+                 3px 3px 0px #333, 
+                 4px 4px 5px rgba(0,0,0,0.5);
+}
+
+/* Layout Principal */
+.container {
+    display: flex;
+    align-items: center;
+    /* Faz a primeira imagem encostar na esquerda e a última na direita */
+    justify-content: space-between; 
+    padding: 80px 0; /* Removido o padding lateral para encostar na borda */
+    max-width: 100%; /* Ocupa a largura total da tela */
+    margin: 0 auto;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: row; /* Coloca os elementos internos lado a lado */
+    justify-content: center;
+    gap: 30px; /* Espaço entre as palavras/frases */
+    font-size: 60px;
+    width: auto; /* Remove aquela largura fixa de 400px para o texto poder esticar */
+    text-align: center;
+}
+
+/* Colunas de Imagens */
+.coluna-imagem {
+    flex: 0 0 700px; /* Define uma largura fixa para as imagens não dominarem a tela */
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+/* Remove margens extras das imagens para garantir o toque na borda */
+.coluna-imagem:first-child {
+    align-items: flex-start;
+}
+
+.coluna-imagem:last-child {
+    align-items: flex-end;
+}
+
+.coluna-imagem img {
+    width: 100%; /* Ocupa os 300px definidos acima */
+    border-radius: 0; /* Opcional: remove arredondamento para parecer mais "encostado" */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+/* Rodapé */
+footer {
+    background-color: black; /* Fundo azul */
+    color: blue;            /* Letras pretas */
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.rodape-container {
+    display: flex;
+    justify-content: center;
+    gap: 150px; /* Espaço entre o número e o insta */
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+.rodape-proprietario {
+    border-top: 1px solid blue(0,0,0,0.1);
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.sorte{
+    color:blue;
+
+}
+.img{
+    width: 100%;
+    height: auto;
+}
