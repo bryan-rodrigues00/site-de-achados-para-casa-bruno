@@ -45,13 +45,16 @@ header {
 
 .conteudo-principal {
     display: flex;
-    flex-direction: row; /* Coloca os elementos internos lado a lado */
-    justify-content: center;
+    flex-direction: column; /* Coloca os elementos internos lado a lado */
+    justify-content: space-between;
     gap: 30px; /* Espaço entre as palavras/frases */
-    font-size: 40px;
+    font-size: 60px;
     width: auto; /* Remove aquela largura fixa de 400px para o texto poder esticar */
     text-align: center;
-    margin: 0;
+    align-items: center;
+    margin-top: 0;
+    color: black;
+
 }
 
 /* Colunas de Imagens */
